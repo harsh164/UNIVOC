@@ -1,0 +1,107 @@
+/* Benefit Section */
+.benefit-section {
+  width: 100%;
+  height: auto;
+  margin-top: 4rem;
+  padding: 2.5rem 0 4rem 0; /* Reduced padding for a smaller height */
+  background: linear-gradient(135deg, rgba(103, 183, 247, 0.8), rgba(58, 93, 169, 0.8)); /* Lighter, semi-transparent gradient */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Benefits Heading */
+.benefits-heading {
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow for a more modern look */
+  margin-bottom: 2rem;
+}
+
+/* Benefits Container */
+.benefits-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 0 10px;
+  position: relative;
+}
+
+/* Individual Benefit Card */
+.benefit-card {
+  background-color: white;
+  border-radius: 15px;
+  padding: 30px;
+  height: 230px; /* Reduced height */
+  width: 230px; /* Reduced width */
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease, border-radius 0.3s ease;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15); /* Soft shadow effect */
+  text-align: center;
+  overflow: hidden; /* To avoid icon overflow on hover */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Allow card positioning adjustment */
+}
+
+/* Card Hover Effect - Increased scaling */
+.benefit-card:hover {
+  transform: translateY(-15px) scale(1.1); /* Reduced scale for subtle hover effect */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); /* Softer, larger shadow */
+  border-radius: 18px; /* Smoother, modern round corners */
+  z-index: 10; /* Bring the hovered card above the others */
+}
+
+/* Icon Container */
+.benefit-icon-container {
+  margin-bottom: 12px; /* Slightly reduced margin */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Benefit Icons */
+.benefit-icon {
+  font-size: 3.5em; /* Reduced size */
+  color: rgba(58, 93, 169, 0.9); /* Softer navy color */
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect on the icon */
+.benefit-card:hover .benefit-icon {
+  transform: rotate(5deg); /* Subtle rotation effect */
+  color: rgba(103, 183, 247, 1); /* Softer blue on hover */
+}
+
+/* Card Title */
+.benefit-card h3 {
+  color: #333;
+  font-size: 1.4rem; /* Slightly reduced font size */
+  font-weight: bold;
+  margin-top: 1rem;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect on card title */
+.benefit-card:hover h3 {
+  color: rgba(103, 183, 247, 1); /* Change text color on hover */
+}
+
+/* Sinusoidal Effect for Card Layout */
+.benefits-container .benefit-card:nth-child(2),
+.benefits-container .benefit-card:nth-child(4) {
+  margin-top: 30px; /* Reduced margin for better alignment */
+}
+
+.benefits-container .benefit-card:nth-child(1),
+.benefits-container .benefit-card:nth-child(3) {
+  margin-bottom: 20px; /* Reduced margin for better alignment */
+}
